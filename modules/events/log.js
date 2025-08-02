@@ -20,7 +20,7 @@ module.exports.config = {
     }
     
     const moment = require("moment-timezone");
-    const time = moment.tz("africa/morocco").format("D/MM/YYYY HH:mm:ss");
+    const time = moment.tz("africa/libya").format("D/MM/YYYY HH:mm:ss");
     //let nameThread = (await Threads.getData(event.threadID)).threadInfo.threadName || "Tên không tồn tại";
     let nameThread = global.data.threadInfo.get(event.threadID).threadName || "Name does not exist"; 
   

@@ -58,7 +58,7 @@ module.exports. run = function({ api, event, args, getText }) {
     //*số thứ tự 1 2 3.....cú pháp ${++i}*//
     let i = 0;
     let msg = "";
-    var emo = ["🤡", "💀", "👻", "🎃", "🤖", "💋🍫", "🦄", "🏳️‍🌈", "💎","🐸","🇲🇦","🐬","✨","🐭","🐙", "🐾🐥"];
+    var emo = ["🤡", "💀", "👻", "🎃", "🤖", "💋🍫", "🦄", "🏳️‍🌈", "💎","🐸","🇱🇾","🐬","✨","🐭","🐙", "🐾🐥"];
     var rand = emo[Math.floor(Math.random() * emo.length)];
     for (var [name, value] of (commands)) {
       name += " " + rand;
@@ -74,7 +74,7 @@ module.exports. run = function({ api, event, args, getText }) {
     for (let item of returnArray) msg += `『 ${++i} 』${prefix}${item}\n`;
     
     
-    const siu = `╔━━❖❖🌈🌈🌈❖❖━━╗\n  𝐀𝐥𝐥 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐋𝐢𝐬𝐭\n╚━━❖❖🌈🌈🌈❖❖━━╝`;
+    const siu = `╔━━❖❖☆☆☆❖❖━━╗\n  𝐀𝐥𝐥 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐋𝐢𝐬𝐭\n╚━━❖❖☆☆☆❖❖━━╝`;
     
  const text = `\nPage (${page}/${Math.ceil(arrayInfo.length/numberOfOnePage)})`;
  

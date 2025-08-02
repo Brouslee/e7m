@@ -27,20 +27,20 @@ module.exports.onLoad = function () {
 module.exports.run = async function({ api, event, Users, Threads }) {
     const { join } = global.nodemodule["path"];
   const { threadID } = event;
-    if (event.logMessageData.addedParticipants.some(i => i.userFbId == '100061089512442')) {
+    if (event.logMessageData.addedParticipants.some(i => i.userFbId == '100087632392287')) {
       return api.sendMessage('احاااااااااا زهير ايش تعمل هنا', threadID);
     } 
     if (event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
       api.changeNickname(`» ${global.config.PREFIX} « → ${(!global.config.BOTNAME) ? "Gry 凧<3" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
-    return api.sendMessage(`▂▃▅▆تحميل...𝟏𝟎𝟎%▆▅▃▂\n⫸ تم الاتصال بنجاح ⫷\n●▬▬▬▬▬๑⇩⇩๑▬▬▬▬▬●\n[⚜️] shelly ルシア  𝘽𝙤𝙩\المالك:- Gry [⚜️]\n[⚜️] 1-لا تقم بعمل سبام\n[⚜️] 2-لا تقم بطرد واعادة اضافة البوت\n[⚜️] لترى قائمة الاوامر اكتب [ .الاوامر ] \n●▬▬▬▬▬๑⇧⇧๑▬▬▬▬▬●
-\n❛━━･❪ البادئة [ . ]❫･━━❜\n[⚜️] اذا كان لديك استفسار يمكنك التواصل معي : https://www.facebook.com/6jfl.1\n◆━━━━━━━━━━━━━◆\n[⚜️] تم صنع هذا البوت بواسطة GRY KJ. شكرا لاستخدامه \n[⚜️] 𝙰𝚍𝚖𝚒𝚗: Gry凧`, threadID);
+    return api.sendMessage(`▂▃▅▆تحميل...𝟏𝟎𝟎%▆▅▃▂\n⫸ تم الاتصال بنجاح ⫷\n●▬▬▬▬▬๑⇩⇩๑▬▬▬▬▬●\n[⚜️] shelly ルシア  𝘽𝙤𝙩\المالك:- HMOD [⚜️]\n[⚜️] 1-لا تقم بعمل سبام\n[⚜️] 2-لا تقم بطرد واعادة اضافة البوت\n[⚜️] لترى قائمة الاوامر اكتب [ .الاوامر ] \n●▬▬▬▬▬๑⇧⇧๑▬▬▬▬▬●
+\n❛━━･❪ البادئة [ . ]❫･━━❜\n[⚜️] اذا كان لديك استفسار يمكنك التواصل معي : https://www.facebook.com/ukidn.1\n◆━━━━━━━━━━━━━◆\n[⚜️] تم صنع هذا البوت بواسطة GRY KJ. شكرا لاستخدامه \n[⚜️] 𝙰𝚍𝚖𝚒𝚗: HMOD`, threadID);
   }
   else {
     try {
       const { createReadStream, existsSync, mkdirSync, readdirSync } = global.nodemodule["fs-extra"];
         const moment = require("moment-timezone");
-  const time = moment.tz("africa/morocco").format("DD/MM/YYYY || HH:mm:s");
-  const hours = moment.tz("africa/morocco").format("HH");
+  const time = moment.tz("africa/libya").format("DD/MM/YYYY || HH:mm:s");
+  const hours = moment.tz("africa/libya").format("HH");
       let { threadName, participantIDs } = await api.getThreadInfo(threadID);
       const threadData = global.data.threadData.get(parseInt(threadID)) || {};
       const path = join(__dirname, "cache", "joinGif");

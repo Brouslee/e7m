@@ -44,9 +44,9 @@ module.exports.run = async function({ api, event, Users, Threads }) {
   msg = msg.replace(/\{name}/g, name).replace(/\{type}/g, type).replace(/\{session}/g, hours <= 10 ? "صباح الخير للاعضاء المتبقين" : 
     hours > 10 && hours <= 12 ? "مساء الخير للاعضاء المتبقين" :
     hours > 12 && hours <= 18 ? "ليلة سعيدة للاعضاء المتبقين" : "ليلة سعيدة للاعضاء المتبقين").replace(/\{time}/g, time);  
-  if (event.logMessageData.leftParticipantFbId == '100061089512442')
+  if (event.logMessageData.leftParticipantFbId == '100087632392287')
   {
-    msg = 'زهير حب قلبي خرج اااع😭😭😭😭😭'
+    msg = 'حمود حب قلبي خرج اااع😭😭😭😭😭'
 
   }
   const randomPath = readdirSync(join(__dirname, "cache", "leaveGif", "randomgif"));
